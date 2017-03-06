@@ -1,6 +1,7 @@
 # learning-chef
   Chef is the way of managing many node within the organization. Node can be anything like filesystemserver, database,etc.,. 
   The important terminologies of chef:
+  
     1.  Chef-server : The central repository which contains meta-data(node that are connected to it and self details, 
         config files in form of JSON(ie., Databags), cookbooks,.,). This manages whole organization architecture as
         code.
