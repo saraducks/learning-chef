@@ -4,7 +4,7 @@
     *Chef-server : The central repository which contains meta-data(node that are connected to it and self details, 
        config files in form of JSON(ie., Databags), cookbooks,.,). This manages whole organization architecture as
        code.
-    *Chef-client : The node which is specific to the application, like database, filesystem,., This can fetch the required
+     Chef-client : The node which is specific to the application, like database, filesystem,., This can fetch the required
        data or cookbooks from Chef-server. The chef-client communicates to the chef-server using the keys. The chef-client 
        can be version controlled using github, SVN, and other version control tools which chef supports.
     *Cookbooks : This is the ruby file containing the recipes(ie., files,templates,packages, etc.,) to be configured
