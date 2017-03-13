@@ -1,5 +1,10 @@
 file 'new html' do
-	source '/var/www/html/index.html'
+	path '/var/www/html/index.html'
 	content 'Hi, this is my new web content!'
 end
 
+webnodes = search('node', 'role:web')
+
+webnodes.each do |node|
+	puts node
+end

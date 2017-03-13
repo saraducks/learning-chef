@@ -4,10 +4,14 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-package 'apache_pck' do
-	package_name 'httpd'
+case node['platform_family']
+when 'rhel'
+ package 'apache_pck' do
+	package_name 'httpd'	
+ end
+ service 'httpd' do
+        action [:enable, :start]
+ end
 end
 
-service 'httpd' do
-	action [:enable, :start]
-end
+
